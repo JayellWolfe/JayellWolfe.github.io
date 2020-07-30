@@ -7,15 +7,16 @@ comments: true
 
 # What is Naive Bayes ?? 
 
-Naive Bayes Classifier Algorithm is a family of probabilistic classification algorithms based on the [Bayes' Theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem) with the 'naive' assumption of conditional independence between every pair of a feature. 
+According to [scikit - learn.org](https://scikit-learn.org/stable/modules/naive_bayes.html) Naive Bayes methods are a set of supervised learning algorithms that are based on [Bayes Theorem](https://www.mathsisfun.com/data/bayes-theorem.html) with the 'naive' assumption that there is a conditional independence between every pair of features given the value of class variable. 
+
 
 ![NaiveBayes](/img/Bayes_rule-300x172.jpg)
 
 Where: 
-P(c|x) is the posterior probability of class (c, target) given predictor (x, attributes).
-P(c) is the prior probability of class.
-P(x|c) is the likelihood which is the probability of predictor given class.
-P(x) is the prior probability of predictor.
+* P(c|x) is the posterior probability of class (c, target) given predictor (x, attributes).
+* P(c) is the prior probability of class.
+* P(x|c) is the likelihood which is the probability of predictor given class.
+* P(x) is the prior probability of predictor.
 
 There are three types of Naive Bayes Algorithms: 
 
@@ -58,7 +59,7 @@ class GaussianNBClassifier:
 ```
 
 # Step 2 - Seperate By Class
-Because we need to calculate the probability of data by the class they belong to (the base rate), we first need to seperate the training data by class: 
+We need to find the base rate - or the probability of data by the class they belong to, so we need to seperate our training data by class. 
 
 ```python 
 def separate_classes(self, X, y):
@@ -73,7 +74,7 @@ def separate_classes(self, X, y):
 ```
 
 # Step 3 - Summarize Features
-The probability is assumed to be Gaussian and is calculated based on mean and standard deviaiton. 
+We will create a summary for each feature in the dataset because the probability is assumed to be Gaussion and is calculated based on the mean and standard deviation. 
 
 ```python 
 def summarize(self, X):
@@ -85,7 +86,7 @@ def summarize(self, X):
 ```
 
 # Step 4 - Gaussian Distribution Function 
-The probability for features following a normal distribution is calculated using the Gaussian Distribution Function (GDF) : 
+We use the Gaussian Distribution Function (GDF) to find the probability for features following a normal distribution 
 
 ![likelihood](/img/likelihood.jfif)
 
@@ -97,7 +98,7 @@ def gauss_distribution_function(self, x, mean, stdev):
 
 
 # Step 5 - Train the Model 
-By training the model, we are telling the model to learn from the dataset, with Gaussian Bayes Classifier, this involves calculating the mean and standard deviation for each feature of each class, allowing us to calculate the probability to be used for predictions. 
+By training our model, we are telling it to learn from the dataset. With Gaussian Bayes Classifier, this involves calculating the mean and standard deviation for each feature os each class. This allows us to then calculate the probability we will use for predictions. 
 
 ```python 
 def fit(self, X, y):
@@ -112,7 +113,8 @@ def fit(self, X, y):
 ```
 
 # Step 6 - Make Predictions
-To predict a class, each posterior probability needs to be calculated for each one. The class with the highest posterior probability will then be the predicted class. 
+
+In order for us to predict a class, we have to calculate the posterior probability for each one. The class which has the highest posterior probability will then be the predicted class. 
 
 The posterior probability is calculated by dividing the joint probability by the mariginal probability 
 
@@ -122,7 +124,7 @@ The joint probability is the numerator of the fraction used to calculate the pos
 
 ![joint_proba](/img/joint_proba.jfif)
 
-Once we have the joint probability for each class we can then select the class with the maximum value for the joint probability: 
+We can then select the class with the maximum value for the joint probability 
 
 ```python
 joint_proba = {}
@@ -210,3 +212,10 @@ Scikit-learn GaussianNB accuracy: 0.972
 ```
 
 The accuracy of our from scratch model matches the accuracy from the scikit-learn model, meaning we have implemented a successful Gaussian Naive Bayes model from scratch !! 
+
+
+# References 
+https://scikit-learn.org/stable/modules/naive_bayes.html
+https://www.mathsisfun.com/data/bayes-theorem.html
+https://www.analyticsvidhya.com/blog/2017/09/naive-bayes-explained/
+
