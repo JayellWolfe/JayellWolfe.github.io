@@ -31,14 +31,14 @@ There are three types of Naive Bayes Algorithms:
     
     
   
-# Main advantages of Naive Bayes are that : 
+**Main advantages of Naive Bayes are that :**
 
 1. fast and easy to understand 
 2. not prone to overfitting
 3. performs well with small amounts of data
 4. when the assumption holds to be true, it performs better compared to other models such as logisitic regression
 
-# Some disadvantages of Navie Bayes are that:
+**Some disadvantages of Navie Bayes are that:**
 
 1. does not work very well when the number of featrues is very high 
 2. the assumption that input features are independent of each other may not always hold to be true
