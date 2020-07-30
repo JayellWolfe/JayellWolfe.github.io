@@ -42,3 +42,17 @@ Some disadvantages of Navie Bayes are that:
 1. does not work very well when the number of featrues is very high 
 2. the assumption that input features are independent of each other may not always hold to be true
 3. important imformation may be lost while resampling the continous variables
+
+
+This post today will focus on the Gaussian Naive Bayes algorithm. We will build one from scratch to gain a better understanding of the model. 
+
+
+# Step 1 - Instantiate the Class: 
+
+I think you should use an
+`<addr>` element here instead.
+
+
+
+
+
