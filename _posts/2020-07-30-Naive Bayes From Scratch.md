@@ -49,8 +49,10 @@ This post today will focus on the Gaussian Naive Bayes algorithm. We will build 
 
 # Step 1 - Instantiate the Class: 
 
-I think you should use an
-`<addr>` element here instead.
+As Kanye West said:
+
+> We're living the future so
+> the present is our past.
 
 
 
