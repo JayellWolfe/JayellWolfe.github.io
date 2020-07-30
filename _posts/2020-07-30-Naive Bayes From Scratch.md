@@ -14,9 +14,9 @@ According to [scikit - learn.org](https://scikit-learn.org/stable/modules/naive_
 
 Where: 
 * P(c|x) is the posterior probability of class (c, target) given predictor (x, attributes).
-* P(|c) is the prior probability of class.
+* P(c) | is the prior probability of class.
 * P(x|c) is the likelihood which is the probability of predictor given class.
-* P(|x) is the prior probability of predictor.
+* P(x) | is the prior probability of predictor.
 
 There are three types of Naive Bayes Algorithms: 
 
