@@ -1,6 +1,9 @@
-layout: post 
-title : "Naive Bayes From Scratch "
-date: 2020=07-30
+---
+layout: post
+title: Naive Bayes Classifier From Scratch
+tags: [Naive Bayes, model, classifier, python]
+comments: true
+---
 
-
-#test because test 
+The Naive Bayes algorithm is a classification technique based on Bayes Theorem. It assumes that a feature in a class is unrelated to the presence of any 
+other feature. The algorithm relies on the posterior probability of the class given a predictor, as shown in the following formula:
