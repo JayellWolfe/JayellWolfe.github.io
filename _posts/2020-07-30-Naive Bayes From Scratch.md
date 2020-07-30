@@ -20,13 +20,13 @@ Where:
 
 There are three types of Naive Bayes Algorithms: 
 
-** 1. Gaussian Naive Bayes 
+**1. Gaussian Naive Bayes**
     This algorithm follows the Gaussian Normal distribution and supports continuous data with the assumption that the continous values associated with each class are distributed according to a normal (or Gaussian) distribution. 
     
-** 2. Multinominal Naive Bayes 
+**2. Multinominal Naive Bayes**
     This algorithm is suitable for classification with dicrete features (word counts for text classicification for example) it normally requires integer feature counts, however fractional counts such as tf-idf may work as well. 
     
-** 3. Bernoulli Naive Bayes 
+**3. Bernoulli Naive Bayes**
     This algorithm is similar to multinominal naive bayes however, in a Bernoulli Naive Bayes, the predictors are boolean variables (yes or no) rather than integers. 
     
     
