@@ -87,7 +87,7 @@ def summarize(self, X):
 # Step 4 - Gaussian Distribution Function 
 The probability for features following a normal distribution is calculated using the Gaussian Distribution Function (GDF) : 
 
-![likelihood](/img/naive-bayes/likelihood.JPG)
+![likelihood](/img/likelihood.JPG)
 
 ```python
 def gauss_distribution_function(self, x, mean, stdev):
@@ -120,7 +120,7 @@ The mariginal probability (denominator) is the total joint probability of all cl
 
 The joint probability is the numerator of the fraction used to calculate the posterior probability:
 
-![joint_proba](/img/naive-bayes/joint_proba.JPG)
+![joint_proba](/img/joint_proba.JPG)
 
 Once we have the joint probability for each class we can then select the class with the maximum value for the joint probability: 
 
