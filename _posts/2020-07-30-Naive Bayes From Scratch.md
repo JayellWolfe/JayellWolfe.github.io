@@ -218,4 +218,4 @@ The accuracy of our from scratch model matches the accuracy from the scikit-lear
 https://scikit-learn.org/stable/modules/naive_bayes.html
 https://www.mathsisfun.com/data/bayes-theorem.html
 https://www.analyticsvidhya.com/blog/2017/09/naive-bayes-explained/
-
+https://machinelearningmastery.com/naive-bayes-classifier-scratch-python/
